@@ -1,0 +1,80 @@
+#gameFrame{
+    background-color: aqua;
+    height: 500px;
+    width: 1350px;
+    position: relative;
+    overflow: hidden;
+    background-image: url(background.jpg);
+    background-size: cover;
+    background-position: bottom;
+    cursor: crosshair;
+}
+
+#healthBar{
+    position: absolute;
+    top:0;
+    left: 0;
+    height: 20px;
+    width: 140%;
+    background-color: coral;
+    transition: width.5s;
+    color: black;
+    text-align: center;
+}
+
+.enemy{
+    height:400px;
+    width: 400px;
+    position: absolute;
+    bottom: -400px;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+.enemy.dead{
+    background-size: contain; 
+    background-repeat: no-repeat;
+}
+#enemy1{
+    background-image: url("pirate1.png");
+    left:4%;
+ 
+}
+
+#enemy2{
+    background-image: url("pirate2.png");
+    left:70%;
+}
+#enemy3{
+    background-image: url("pirate3.png");
+    left: 30%;
+
+}
+
+#enemy4{
+    background-image: url("pirate4.png");
+    left:50%;
+
+}
+
+.enemy.showing{
+    bottom:0px;
+
+}
+.enemy.shooting{
+    background-color: rgb(253, 253, 119);
+    
+}
+#button{
+    height: 100%;
+    width: 100%;
+    background-color: coral;
+
+
+    border: 0;
+    box-shadow: none;
+
+    font-size: 5em;
+    letter-spacing: -2px;
+
+    opacity: 0.5;
+}
